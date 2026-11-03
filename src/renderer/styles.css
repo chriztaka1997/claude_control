@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: #0b0d10;
+  color: #d7dae0;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+.drag {
+  -webkit-app-region: drag;
+}
+
+.xterm {
+  height: 100%;
+  padding: 6px 0 0 8px;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.dot-pulse {
+  animation: pulse-dot 1.2s ease-in-out infinite;
+}
