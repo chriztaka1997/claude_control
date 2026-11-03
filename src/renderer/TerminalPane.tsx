@@ -61,6 +61,8 @@ export class TerminalHost {
       allowProposedApi: true,
       macOptionIsMeta: true,
       scrollback: 1000,
+      // Lift dim/grey text (and low-contrast colors) to WCAG AA against its background.
+      minimumContrastRatio: 6,
       theme: { background: '#0b0d10', foreground: '#d7dae0', cursor: '#d7dae0', selectionBackground: '#3b82f655' }
     })
     const fit = new FitAddon()
